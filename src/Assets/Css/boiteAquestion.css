@@ -1,0 +1,40 @@
+/* Start custom boite a question home */
+.boite-Aquestion {
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  width: 90%;
+  max-width: 60rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+/* End custom boite a question home */
+
+/* Start custom boite a question home question part */
+.bA-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bA-question h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.bA-question-icones {
+  border: 1px solid var(--color-grey);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* End  custom boite a question home question part */
+.bA-answer p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+}

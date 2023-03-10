@@ -1,0 +1,55 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Jud;
+  src: url(../Fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Jud-thin;
+  src: url(../Fonts/Poppins/Poppins-Thin.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Jud", -apple-system, BlinkMacSystemFont, source-code-pro, Menlo,
+    Monaco, Consolas, "Courier New", monospace, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+}
+:root {
+  --primary-color: #0a1930;
+  --secondary-color: #1f93ff;
+  --thrid-color: #2da5ff;
+  --color-white: #fff;
+  --color-black: #000;
+  --dark-text: #333;
+  --color-grey: #eae6eb;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+section {
+  width: 100%;
+  padding: 5rem 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Text styles */
+.u-text-small {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 300;
+}

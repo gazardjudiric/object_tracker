@@ -1,0 +1,57 @@
+/* Start custom Nav bar */
+.navbar {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* End custom Nav bar */
+
+/* Start custom Nav bar logo */
+.nb-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nb-logo > :nth-child(1) {
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+.nb-logo-text {
+  font-size: 35px;
+  font-weight: 300;
+  color: white;
+}
+.nb-logo-text span {
+  color: orangered;
+  font-weight: 600;
+}
+/* End custom Nav bar logo */
+
+/* Start custom Nav bar links */
+.nb-links {
+  display: flex;
+  list-style: none;
+  color: var(--color-white);
+  gap: 20px;
+}
+.nb-links > li > a,
+.nb-btn {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 200;
+  transition: all 0.3s;
+}
+.nb-links > li > a:hover {
+  color: orangered;
+}
+/* End custom Nav bar links */
+
+/* Start custom Nav bar button */
+.nb-btn {
+  background: transparent;
+  border: 2px solid var(--color-white);
+}
+/* End custom Nav bar button */

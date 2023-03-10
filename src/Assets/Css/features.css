@@ -1,0 +1,41 @@
+/* Start custom feature icones */
+.fh-iconesHome {
+  text-align: center;
+}
+.fh-icones {
+  font-size: 30px;
+  color: orangered;
+}
+.fh-iconesHome h2 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--dark-text);
+  margin: 15px 0;
+}
+/* End custom feature icones */
+
+/* Start custom feature content */
+.feature-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+/* End custom feature content */
+
+/* Start custom feature content left part */
+.fc-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.fc-left img {
+  width: 65%;
+}
+/* End custom feature content left part */
+
+/* Start custom feature content rigth part */
+.fc-right {
+  width: 50%;
+}
+/* End custom feature content rigth part */

@@ -1,0 +1,33 @@
+/* Start custom feature icones part */
+.feature {
+  display: flex;
+}
+.feature-iconeHome {
+  position: relative;
+  padding: 0 20px;
+}
+.feature-icone1 {
+  font-size: 60px;
+  color: #fc5412;
+}
+.feature-icone2 {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: #0a1930;
+}
+/* End custom feature icones part */
+
+/* Start custom feature text part */
+.feature-text h3 {
+  font-size: 25px;
+  font-family: Jud-Thin;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+}
+.feature-text p {
+  font-size: 12px;
+}
+/* End custom feature text part */

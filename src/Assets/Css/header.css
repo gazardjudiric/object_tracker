@@ -1,0 +1,106 @@
+/* Start custom Home header */
+.header {
+  position: relative;
+}
+.header-home {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* End custom Home header */
+
+/* Start custom Home header left part */
+.header-left {
+  width: 60%;
+}
+.header-left h1 {
+  font-size: 2.6rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--color-white);
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+.header-left h1 span {
+  display: block;
+}
+.header-left h1 span:nth-child(1) {
+  font-weight: bolder;
+}
+.header-left h1 span:nth-child(2),
+.header-left h1 span:nth-child(3) {
+  font-weight: 100;
+  font-family: Jud-Thin;
+}
+.header-left h1::after {
+  content: "";
+  position: absolute;
+  width: 74%;
+  height: 1px;
+  bottom: 0;
+  background: var(--color-white);
+}
+.header-left p {
+  margin: 1rem 0;
+  color: var(--color-white);
+  font-size: 13px;
+  width: 75%;
+}
+.h-btn {
+  background: orangered;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: 800;
+}
+.h-btn:hover {
+  color: white;
+}
+/* End custom Home header left part */
+
+/* Start custom Home header right part */
+.header-right {
+  width: 35%;
+}
+.header-right img {
+  width: 100%;
+}
+/* End custom Home header right part */
+
+/* Start custom Home header mouse */
+.header-floatingIcon {
+  background-color: var(--secondary-color);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+.header-floatingIcon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mouse {
+  transform: translateY(-25%);
+  font-size: 30px;
+  color: var(--color-white);
+  animation: bounce 0.8s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
+}
+/* End custom Home header mouse */
