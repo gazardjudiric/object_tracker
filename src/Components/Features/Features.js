@@ -6,7 +6,7 @@ import Feature from "./Feature";
 
 function Features(props) {
   return (
-    <section className="features">
+    <section id="features">
       <div className="container features-home">
         <div className="fh-iconesHome">
           <IconesBookmarkStarFill className="fh-icones" />

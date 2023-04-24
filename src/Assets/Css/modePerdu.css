@@ -1,0 +1,152 @@
+.modePerduSection {
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+}
+.modePerduhome {
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modePerduhome-left {
+  display: flex;
+  justify-content: center;
+}
+
+.modePerduhome-left img {
+  width: 90%;
+}
+
+.modePerduhome-right {
+  width: 50%;
+}
+
+.modePerduhome-right h1 {
+  font-size: 3rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-weight: 800;
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.modePerduhome-right h1::after {
+  position: absolute;
+  content: "";
+  background: var(--color-white);
+  height: 1px;
+  width: 65%;
+  left: 0;
+  bottom: 0;
+}
+
+.modePerduhome-right p {
+  margin: 3rem 0;
+  width: 70%;
+}
+.modePerduhome-right_btn {
+  display: inline-block;
+}
+
+.modeperdu {
+  font-size: 2rem;
+  color: orangered !important;
+}
+
+/* --------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .modePerduhome {
+    width: 90%;
+  }
+  .modePerduhome-left img {
+    width: 80%;
+  }
+  .modePerduhome-right h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablette >= 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .modePerduhome-right h1 {
+    font-size: 2.6rem;
+  }
+  .modePerduhome-left img {
+    width: 85%;
+  }
+  .modePerduhome-right {
+    width: 80%;
+  }
+}
+
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .modePerduhome {
+    align-items: flex-start;
+  }
+  .modePerduhome-right h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .modePerduhome-left img {
+    width: 85%;
+  }
+  .modePerduhome-right {
+    width: 70%;
+    text-align: center;
+  }
+  .modePerduhome-right p {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  .modePerduhome-right h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .modePerduhome {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modePerduhome-left img {
+    width: 85%;
+  }
+
+  .modePerduhome-right {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .modePerduhome-right h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .modePerduhome-right p {
+    margin: 2rem auto;
+    width: 100%;
+  }
+  .modePerduhome-right h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------------------End Responsive */

@@ -55,3 +55,192 @@
   border: 2px solid var(--color-white);
 }
 /* End custom Nav bar button */
+
+.menu-icones {
+  display: none;
+}
+
+/* --------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nb-logo {
+    margin-left: 65px;
+  }
+
+  .nb-links {
+    margin-right: 60px;
+  }
+}
+
+/* Tablette >= 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nb-logo-text {
+    font-size: 30px;
+  }
+  .btn_enSavoirPlus {
+    display: none;
+  }
+
+  .nb-logo {
+    margin-left: 30px;
+  }
+
+  .nb-links {
+    margin-right: 50px;
+  }
+}
+
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .menu-icones {
+    display: block;
+    margin-right: 60px;
+    font-size: 2rem;
+  }
+  .nb-links {
+    display: none;
+    border: 2px solid #fff;
+    z-index: 111;
+  }
+
+  #showResponsiveMenu,
+  #hideResponsiveMenu {
+    display: block;
+    position: absolute;
+    list-style: none;
+    background-color: #0a1930;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+  }
+
+  #showResponsiveMenu {
+    animation: slide-in 0.5s ease-in-out;
+  }
+  #hideResponsiveMenu {
+    left: -100%;
+    animation: slide-out 0.5s ease-in-out;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  #showResponsiveMenu li,
+  #hideResponsiveMenu li {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 30px;
+  }
+
+  #showResponsiveMenu li:last-child,
+  #hideResponsiveMenu li:last-child {
+    border-bottom: none;
+  }
+
+  #showResponsiveMenu li a {
+    font-size: 18px;
+  }
+
+  .nb-logo {
+    margin-left: 28px;
+  }
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .menu-icones {
+    display: block;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 2rem;
+  }
+  .nb-links {
+    display: none;
+    border: 2px solid #fff;
+    z-index: 111;
+  }
+
+  #showResponsiveMenu,
+  #hideResponsiveMenu {
+    display: block;
+    position: absolute;
+    list-style: none;
+    background-color: #0a1930;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+  }
+
+  #showResponsiveMenu {
+    animation: slide-in 0.5s ease-in-out;
+  }
+  #hideResponsiveMenu {
+    left: -100%;
+    animation: slide-out 0.5s ease-in-out;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  #showResponsiveMenu li,
+  #hideResponsiveMenu li {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 30px;
+  }
+
+  #showResponsiveMenu li:last-child,
+  #hideResponsiveMenu li:last-child {
+    border-bottom: none;
+  }
+
+  #showResponsiveMenu li a {
+    font-size: 18px;
+  }
+
+  .nb-logo {
+    margin-left: 15px;
+  }
+}
+/* ---------------------End Responsive */

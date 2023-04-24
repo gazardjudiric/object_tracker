@@ -1,8 +1,15 @@
-import React from "react";
-import { IconesAnaconda } from "../Assets/Icones/Icones";
+import React, { useState } from "react";
+import { IconesAnaconda, IconesMdiMinus, IconesMdiPlus } from "../Assets/Icones/Icones";
 import Button from "./UI-kits/Button";
 
 function Navbar(props) {
+
+  const [showMenu, setShowMenu] = useState(false)
+
+  function HandleChangeMenuIcones() {
+    setShowMenu(!showMenu)
+  }
+
   return (
     <nav className="container navbar">
       <div className="nb-logo">
@@ -12,9 +19,11 @@ function Navbar(props) {
         </p>
       </div>
       <menu>
-        <ul className="nb-links">
+        <ul className="nb-links"
+          id={showMenu ? "showResponsiveMenu" : "hideResponsiveMenu"}
+        >
           <li>
-            <a href="#">Accueil</a>
+            <a href="#/">Accueil</a>
           </li>
           <li>
             <a href="#features">Catégories</a>
@@ -25,17 +34,24 @@ function Navbar(props) {
           <li>
             <a href="#subscribe">Souscription</a>
           </li>
-          <li>
+          <li className="btn_enSavoirPlus">
             <Button
               propriete={{
-                href: "#",
+                href: "#faq",
                 text: "En savoir plus",
-                btnclass: "nb-btn",
+                btnClass: "nb-btn",
               }}
             />
           </li>
         </ul>
       </menu>
+      <div className="menu-icones" onClick={HandleChangeMenuIcones}>
+        {showMenu ? (
+          <IconesMdiMinus color="#fff" />
+        ) : (
+          <IconesMdiPlus color="#fff" />
+        )}
+      </div>
     </nav>
   );
 }

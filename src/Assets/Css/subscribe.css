@@ -9,6 +9,10 @@
 /* End custom Subscribe section */
 
 /* Start custom Subscribe home title part*/
+.subscribe-home {
+  width: 100%;
+  margin: 0 auto;
+}
 .subscribe-home h2 {
   font-size: 3rem;
   font-weight: 200;
@@ -43,6 +47,7 @@ form .form-control button {
   color: var(--color-white);
   font-size: 1.6rem;
   font-weight: 500;
+  cursor: pointer;
 }
 /* End custom Subscribe home form part*/
 
@@ -51,10 +56,9 @@ form .form-control button {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 .sh-icone {
-  margin: 2rem;
-  padding: 1rem;
   width: 4rem;
   height: 4rem;
   border: 1px solid var(--color-white);
@@ -70,3 +74,77 @@ form .form-control button {
   background-color: var(--secondary-color);
 }
 /* End custom Subscribe home icones part */
+
+/* --------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablette >= 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .subscribe-home h2 {
+    font-size: 2rem;
+  }
+
+  form .form-control input {
+    width: 55%;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  form .form-control button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .sh-icone {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.3rem;
+  }
+}
+
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .subscribe-home h2 {
+    font-size: 1.7rem;
+  }
+  form .form-control input {
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  form .form-control button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .sh-icone {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .subscribe-home h2 {
+    font-size: 1.7rem;
+  }
+  form .form-control input {
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  form .form-control button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .sh-icone {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+  }
+}
+/* ---------------------End Responsive */

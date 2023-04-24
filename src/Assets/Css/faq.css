@@ -19,3 +19,44 @@
   margin: 1.5rem 0;
 }
 /* End custom Faq home head icone part */
+
+/* Start custom Faq home body  part */
+
+/* End custom Faq home home body part */
+
+/* --------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablette >= 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-home-header h2:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .faq-home-body {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .faq-home-body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .faq-home-body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* ---------------------End Responsive */

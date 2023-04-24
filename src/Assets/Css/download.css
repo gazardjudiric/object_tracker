@@ -3,7 +3,7 @@
   background: linear-gradient(
     90deg,
     rgba(45, 165, 255, 1) 45%,
-    rgba(1, 223, 245, 1) 100%
+    rgb(1, 223, 245) 100%
   );
   text-align: center;
   color: var(--color-white);
@@ -49,6 +49,64 @@
 }
 .dc-homicon:hover {
   background-color: var(--color-white);
-  color: var(--third-color);
+  color: #01dff5;
 }
 /* End custom download content */
+
+/* --------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablette >= 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .download-content h2 {
+    font-size: 2rem;
+  }
+  .download-content h2::after {
+    width: 20%;
+  }
+  .download-content p {
+    font-size: 13px;
+  }
+  .dc-homicon {
+    width: 9rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .download-content h2 {
+    font-size: 1.8rem;
+  }
+  .download-content p {
+    font-size: 12px;
+  }
+  .dc-homicon {
+    width: 8rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .download-content h2 {
+    font-size: 1.8rem;
+  }
+  .download-content p {
+    font-size: 11px;
+  }
+  .dc-homicon {
+    width: 8rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------------------End Responsive */

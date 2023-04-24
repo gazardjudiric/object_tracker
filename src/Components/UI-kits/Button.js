@@ -1,9 +1,9 @@
 import React from "react";
 
 function Button(props) {
-  const { text, btnclass, href } = props.propriete;
+  const { text, btnClass, href } = props.propriete;
   return (
-    <a href={href} className={`btn ${btnclass}`}>
+    <a href={href} className={`btn ${btnClass}`}>
       {text}
     </a>
   );

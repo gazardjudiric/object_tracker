@@ -11,19 +11,19 @@ function Footer(props) {
             <h4>Lien Utile</h4>
             <ul className="footer-links">
               <li>
-                <a href="">Support</a>
+                <a href="#">Accueil</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="#features">Catégories</a>
               </li>
               <li>
-                <a href="">Learn</a>
+                <a href="#download">Télécharger</a>
               </li>
               <li>
-                <a href="">Hosting</a>
+                <a href="#subscribe">Souscription</a>
               </li>
               <li>
-                <a href="">Messenger</a>
+                <a href="#faq">En savoir plus</a>
               </li>
             </ul>
           </div>

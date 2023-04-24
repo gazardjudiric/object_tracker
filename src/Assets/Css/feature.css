@@ -1,10 +1,13 @@
 /* Start custom feature icones part */
 .feature {
   display: flex;
+  width: 100%;
+  /* background-color: blue; */
 }
 .feature-iconeHome {
   position: relative;
   padding: 0 20px;
+  margin: 5px;
 }
 .feature-icone1 {
   font-size: 60px;
@@ -30,4 +33,59 @@
 .feature-text p {
   font-size: 12px;
 }
-/* End custom feature text part */
+
+/* ---------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablette >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .feature {
+    width: 100%;
+    /* background-color: blue; */
+  }
+  .feature-text {
+    width: 80%;
+    /* background-color: yellow; */
+  }
+}
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .feature {
+    flex-direction: column;
+  }
+  .feature-icone1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .feature-iconeHome {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .fc-left img {
+    width: 40%;
+  }
+  .fc-right {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fh-iconesHome h2 {
+    font-size: 20px;
+  }
+}
+/* ---------------------End Responsive */

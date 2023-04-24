@@ -1,6 +1,15 @@
 /* Start custom feature icones */
+.features-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .fh-iconesHome {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .fh-icones {
   font-size: 30px;
@@ -12,6 +21,7 @@
   text-transform: uppercase;
   color: var(--dark-text);
   margin: 15px 0;
+  display: inline-block;
 }
 /* End custom feature icones */
 
@@ -25,12 +35,12 @@
 
 /* Start custom feature content left part */
 .fc-left {
-  width: 50%;
   display: flex;
   justify-content: center;
+  object-fit: cover;
 }
 .fc-left img {
-  width: 65%;
+  width: 70%;
 }
 /* End custom feature content left part */
 
@@ -39,3 +49,74 @@
   width: 50%;
 }
 /* End custom feature content rigth part */
+
+/* End custom feature text part */
+
+/* ---------------------Start Responsive */
+
+/* desktops >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .feature-content {
+    width: 90%;
+  }
+  .fc-right {
+    margin-right: 40px;
+  }
+}
+
+/* Tablette >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .fc-left img {
+    width: 40% !important;
+  }
+  .fc-right {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Phone 1 >= 576px  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .fc-left img {
+    width: 40% !important;
+  }
+  .fc-right {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Phone 2 <= 575px */
+@media only screen and (max-width: 575px) {
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .fh-iconesHome h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .fc-left img {
+    width: 60% !important;
+  }
+  .fc-right {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* ---------------------End Responsive */
