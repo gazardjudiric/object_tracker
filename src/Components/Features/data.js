@@ -9,21 +9,21 @@ export const FeaturesList = [
   {
     icon: <IconesHeadset />,
     title: "Commande vocal",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veniam dolorum repellendus obcaecati minus voluptas neque dolore similique",
+    text: `La commande vocale offre une expérience utilisateur optimale et rapide.`,
   },
   {
     icon: <IconesMdiMapMarkerRadius />,
     title: "Geo - localisation",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veniam dolorum repellendus obcaecati minus voluptas neque dolore similique",
+    text: `Si l'objet ne peut pas être localisé via Bluetooth, l'application bascule automatiquement sur la technologie GPS pour aider à localiser l'objet`,
   },
   {
     icon: <IconesMdiLock />,
     title: "Mode perdue",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veniam dolorum repellendus obcaecati minus voluptas neque dolore similique",
+    text: `Grâce au mode perdu, toute personne ayant trouvé votre objet et scanné le code QR situé à l'arrière de celui-ci sera automatiquement redirigée vers une page web contenant un message personnalisé`
   },
   {
     icon: <IconesBookmarkStarFill />,
     title: "Historiques",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veniam dolorum repellendus obcaecati minus voluptas neque dolore similique",
+    text: `L'onglet historique fournira au propriétaire une liste précise des lieux où l'objet égaré a été localisé au cours des dernières 72 heures.`,
   },
 ];
