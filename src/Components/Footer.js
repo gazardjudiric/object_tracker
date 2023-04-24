@@ -31,19 +31,19 @@ function Footer(props) {
             <h4>Support</h4>
             <ul className="footer-links">
               <li>
-                <a href="">Support</a>
+                <a href="">Soutien</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="">A propos</a>
               </li>
               <li>
-                <a href="">Learn</a>
+                <a href="">Apprendre</a>
               </li>
               <li>
-                <a href="">Hosting</a>
+                <a href="">Associé</a>
               </li>
               <li>
-                <a href="">Messenger</a>
+                <a href="">Messageries</a>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ function Footer(props) {
               <li>
                 <p>
                   <IconesMdiMapMarkerRadius className="footer-contact-icones" />
-                  &nbsp; Website: www.test.com
+                  &nbsp; Website: objettracker.netlify.app
                 </p>
               </li>
             </ul>
@@ -91,7 +91,7 @@ function Footer(props) {
             </div>
           </div>
         </div>
-        <p>&copy; Copyright 2022. Objetracker.com</p>
+        <p>&copy; Copyright 2023. objettracker.netlify.app</p>
       </div>
     </section>
   );
